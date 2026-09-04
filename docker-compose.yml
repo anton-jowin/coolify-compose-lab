@@ -1,8 +1,6 @@
 services:
-
   web:
     build: .
-    container_name: compose-flask
     ports:
       - "5000:5000"
     depends_on:
@@ -10,4 +8,3 @@ services:
 
   redis:
     image: redis:7-alpine
-    container_name: compose-redis
